@@ -3,6 +3,8 @@
 ## What it is
 Drop any file to the page and you will get a data URL of the file.
 
+[See the page in action!](http://and3k5.github.io/DataURL/)
+
 ### Im sorry, what?
 A data URL is often used for images on a page without uploading multiple files.
 
@@ -12,7 +14,7 @@ data:text/html;base64,PGgxPldlbGNvbWUgdG8gbm93aGVyZTwvaDE+PHA+V2hlcmUgYW0gSSwgeW
 ```
 
 Look up [Data URI Scheme](https://en.wikipedia.org/wiki/Data_URI_scheme) at Wikipedia
-## Why?
+## Why make this?
 I don't know.
 ## Need help?
 Any help would be great! 🍴
