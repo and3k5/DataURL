@@ -1,4 +1,4 @@
-![GitHub Logo](/res/Header.png)
+![DataURL](/res/Header.png)
 
 ## What it is
 Drop any file to the page and you will get a data URL of the file.
