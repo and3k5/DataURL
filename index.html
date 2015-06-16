@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DataURL</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta property="og:title" content="DataURL Converter" />
+        <meta property="og:site_name" content="And3k5 @ github.com" />
+        <meta property="og:description" content="Drop any file to the page and you will get a data URL of the file." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://and3k5.github.io/DataURL/" />
+        <meta property="og:image" content="http://and3k5.github.io/DataURL/res/Logo_512.png" />
+        <meta property="og:image:secure_url" content="https://and3k5.github.io/DataURL/res/Logo_512.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <h1>DataURL</h1>
+                <p>Select a file or drag a file to this page</p>
+            </header>
+            
+            <input id="inputFile" type="file" multiple>
+            <label for="inputFile">
+                <span class="btn">Select a file</span>
+            </label>
+            <span class="btn" id="clearBtn">Clear results</span>
+            
+            <div class="preview">
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

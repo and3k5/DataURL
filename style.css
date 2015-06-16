@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana;
+    color:white;
+    background:linear-gradient(90deg, rgba(75,200,75, 0.65) 0%, rgba(60,60,200, 0.65) 100%);
+}
+.content {
+    background:rgba(60,60,100,0.5);
+    min-height:500px;
+    max-width:700px;
+    border-radius:15px;
+    margin:auto auto;
+    padding:20px;
+}
+.content #inputFile {
+    display:none;
+}
+#clearBtn {
+    float:right;
+}
+.btn {
+	box-shadow:inset 0px 0px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 20%, #0688fa 100%);
+	background-size:contain;
+	background-color:#2dabf9;
+	border-radius:7px;
+	border:2px solid rgba(255,255,255,0.75);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	padding:6px 6px;
+	text-decoration:none;
+}
+
+
+.btn:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.preview {
+    margin-top:20px;
+    border:1px solid rgba(255,255,255,0.125);
+    width:100%;
+    min-height:400px;
+}
+
+.filerow {
+    background-image:linear-gradient(to bottom,rgba(100,200,255,0.75) 0%,rgba(100,150,255,0.75) 100%);
+}
+
+.filerow > *:first-child {
+    height:100px;
+    width:200px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #008000;
+    float:left;
+    box-sizing: border-box;
+    
+}
+.filerow div {
+    display:inline-block;
+    height:100px;
+}
+.filerow div:nth-child(2) {
+    
+}
+.filerow .img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+h1 {
+    margin:0px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin:0px;
+    }
+    .btn {
+        border:none;
+        border-radius:0px;
+        padding:15px;
+    }
+    header {
+        background-color:rgba(0,60,120,0.75);
+        position:fixed;
+        width:100%;
+        margin:0px;
+        top:0px;
+        left:0px;
+        height:100px;
+        padding:15px;
+        box-sizing:border-box;
+    }
+    .content {
+        margin-top:100px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom:0px;
+        background:rgba(0,120,150,1);
+        min-height:500px;
+        max-width:700px;
+        border-radius:0px;
+        padding:15px;
+        height:100%;
+    }
+}
