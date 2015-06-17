@@ -49,7 +49,7 @@ var element = document.body; {
     }
 }
 
-function fileReaderLoad(e) {
+function fileReaderLoad(e,inStorage) {
     var wrap = document.createElement("div");
     wrap.classList.add("filerow");
     if (e.target.result.indexOf("image/")===5) {
@@ -76,6 +76,11 @@ function fileReaderLoad(e) {
     info.appendChild(document.createElement("br"));
     
     document.querySelector(".preview").appendChild(wrap);
+    
+    if (sessionStorage && !inStorage) {
+        sessionStorage["file_"+Date.now().toString(36)]=e.target.result;
+    }
+    
 }
 
 function GetFile(f) {
@@ -86,4 +91,23 @@ function GetFile(f) {
 
 document.querySelector("#clearBtn").addEventListener("click",function () {
     document.querySelector(".preview").innerHTML="";
+    if (sessionStorage) {
+        for (var i in sessionStorage) {
+            if (i.indexOf("file_")===0) {
+                sessionStorage.removeItem(i);
+            }
+        }
+    }
 })
+
+window.addEventListener("load",function () {
+    if (sessionStorage) {
+        for (var i in sessionStorage) {
+            if (i.indexOf("file_")===0) {
+                // Show the previous loaded files.
+                // Might not be the smartest way to do this.
+                fileReaderLoad({target:{result:sessionStorage[i]}},true);
+            }
+        }
+    }
+});
