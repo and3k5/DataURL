@@ -1,3 +1,12 @@
+@media screen and (max-width: 370px) {
+    .btn {
+        display:block;
+        float:none !important;
+        width:100%;
+        box-sizing: border-box;
+    }
+}
+
 body {
     font-family: Verdana;
     color:white;
@@ -91,7 +100,7 @@ h1 {
     }
     header {
         background-color:rgba(0,60,120,0.75);
-        position:fixed;
+        position:absolute;
         width:100%;
         margin:0px;
         top:0px;
